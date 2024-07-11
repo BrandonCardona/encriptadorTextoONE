@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header></header>
+    <main class="presentacion">
+
+        <div class="logoContainer">
+            <img class="logo" src="assets/Logo.png" alt="Logo Alura">
+        </div>
+        <section class="presentacionMensaje">
+            <textarea class="mensaje" placeholder="Ingrese el texto aqui" id="mensaje"></textarea>
+
+            <section class="presentacionOpciones">
+                <div class="mensajeMinusculas">
+                    <img src="assets/exclamation.png" alt="Signo de exclamacion" class="imgMensaje">
+                    <p class="mensajeMinusculas">Solo letras minúsculas y sin acentos</p>
+                </div>
+    
+                <div class="botones">
+                    <button onclick="encriptarMensaje()" type="button" class="botonEncriptar">Encriptar</button>
+                    <button onclick="desencriptarMensaje()" type="button" class="botonDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+        </section>
+
+        <section id="seccionResultado" class="resultadoMensaje">
+            <p id="mensajeResultado" class="resultado"></p>
+            <img id="imgResultado" class="ImagenPrueba" src="assets/boy.png" alt="Sin mensaje para encriptar o desencriptar">
+            <p id="imgMensaje1" class="mensajeImagen1"></p>
+            <p id="imgMensaje2" class="mensajeImagen2"></p>
+            <a onclick="copiarTexto(event)" id="btnCopiar" href=""></a>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Brandon Cardona</p>
+        <p>2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
